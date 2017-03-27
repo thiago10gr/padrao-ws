@@ -9,6 +9,15 @@ com o nome de SECRET_KEY.
 
 Os tokens de acesso podem ser testados em: https://jwt.io/
 
+Os Métodos que necessitam de um Token de acesso são anotados com @Secured 
+
+Para realizar a requisição do Token é necessário fornecer um Header:
+Content-Type Value - application/x-www-form-urlencoded
+
+Para os métodos anotados com @Secured é necessário fornecer no Header:
+Content-Type Value - application/x-www-form-urlencoded
+Authorization - Bearer token_de_acesso
+
 Para este projeto foi utilizado MySql e então criado a base de dados projetows e a tabela tbl_usuario:
 
 CREATE TABLE TBL_USUARIO
@@ -40,6 +49,7 @@ Para a realização da conexão com a base de dados é feito um lookup. As confi
        url="jdbc:mysql://localhost:3306/padraows" /> 
        
       
+A realização dos teste foi utilizado o software Postman: https://www.getpostman.com/
 
        
  
