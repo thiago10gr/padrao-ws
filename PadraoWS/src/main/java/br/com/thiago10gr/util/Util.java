@@ -66,10 +66,10 @@ public class Util implements Serializable {
 	  
 	  /**
 	   * 
-	   * @param claims parametros para a cria��o do token
-	   * @param algorithm tipo do algor�timo utilizado
+	   * @param claims parametros para a criação do token
+	   * @param algorithm tipo do algorítimo utilizado
 	   * @param secret chave secreta
-	   * @return token v�lido
+	   * @return token válido
 	   */
 	  public static String gerarToken(HashMap<String, Object> claims, Algorithm algorithm, String secret) {
 		  
@@ -88,7 +88,7 @@ public class Util implements Serializable {
 	   * 
 	   * @param token
 	   * @param secret
-	   * @return Informa��es de acesso
+	   * @return Informaçõees de acesso
 	   * @throws Exception
 	   */
 	  public static Map<String, Object> verificarToken(String token, String secret) throws Exception {
