@@ -87,7 +87,11 @@ public class Util implements Serializable {
 	   * 
 	   * @param token
 	   * @param secret
+<<<<<<< HEAD
 	   * @return Informaçõees de acesso
+=======
+	   * @return Informações de acesso
+>>>>>>> branch 'master' of https://github.com/thiago10gr/padrao-ws.git
 	   * @throws Exception
 	   */
 	  public static Map<String, Object> verificarToken(String token, String secret) throws Exception {
