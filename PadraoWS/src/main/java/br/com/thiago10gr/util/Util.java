@@ -102,22 +102,22 @@ public class Util implements Serializable {
 		      
 		  } catch (JWTVerifyException e) {
 			  e.printStackTrace();
-			  throw new Exception("Token inv�lido.");
+			  throw new Exception("Token inválido.");
 		  } catch (InvalidKeyException e) {
 			  e.printStackTrace();
-			  throw new Exception("Token inv�lido.");
+			  throw new Exception("Token inválido.");
 			} catch (NoSuchAlgorithmException e) {
 				e.printStackTrace();
-				throw new Exception("Token inv�lido.");
+				throw new Exception("Token inválido.");
 			} catch (IllegalStateException e) {
 				e.printStackTrace();
-				throw new Exception("Token inv�lido.");
+				throw new Exception("Token inválido.");
 			} catch (SignatureException e) {
 				e.printStackTrace();
-				throw new Exception("Token inv�lido.");
+				throw new Exception("Token inválido.");
 			} catch (IOException e) {
 				e.printStackTrace();
-				throw new Exception("Token inv�lido.");
+				throw new Exception("Token inválido.");
 			}
 	  
 		 return  claims;
