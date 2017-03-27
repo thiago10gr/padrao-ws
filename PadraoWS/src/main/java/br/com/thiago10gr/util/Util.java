@@ -120,7 +120,7 @@ public class Util implements Serializable {
 			}
 	  
 		 return  claims;
-	  }
+	 }
 	 
 	public static void writeToFile(InputStream uploadedInputStream, String uploadedFileLocation) {
 
