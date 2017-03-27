@@ -63,7 +63,6 @@ public class Util implements Serializable {
 	    return Util.getHash(txt, "SHA1");
 	  }
 	 
-	  
 	  /**
 	   * 
 	   * @param claims parametros para a criação do token
