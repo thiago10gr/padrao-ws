@@ -4,7 +4,6 @@ import java.io.Serializable;
 import java.util.Calendar;
 import javax.ws.rs.FormParam;
 import javax.xml.bind.annotation.XmlRootElement;
-
 import br.com.thiago10gr.util.DateTime;
 
 @XmlRootElement(name = "usuario")
