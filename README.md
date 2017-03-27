@@ -49,7 +49,7 @@ Para a realização da conexão com a base de dados é feito um lookup. As confi
        url="jdbc:mysql://localhost:3306/padraows" /> 
        
       
-Para a realização dos teste foi utilizado o software Postman: https://www.getpostman.com/
+Os testes podem ser realizados utilizado o software Postman: https://www.getpostman.com/
 
        
  
