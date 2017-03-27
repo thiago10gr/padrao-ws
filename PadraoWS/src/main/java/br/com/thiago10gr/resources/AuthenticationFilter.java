@@ -19,8 +19,8 @@ public class AuthenticationFilter implements ContainerRequestFilter {
     
 	@Override
     public void filter(ContainerRequestContext requestContext) throws IOException {
-
-        // Obtém o Header Authorization (cabecalho de autorizacao) do request 
+       
+		// Obtém o Header Authorization (cabecalho de autorizacao) do request 
         String authorizationHeader = requestContext.getHeaderString(HttpHeaders.AUTHORIZATION);  // ou getHeaderString("Authorization")
        
         //System.out.println("HOST: " + requestContext.getHeaderString(HttpHeaders.HOST));
