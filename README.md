@@ -7,6 +7,8 @@ requisição feita, fazendo assim a validação do token fornecido.
 O WebService utiliza uma chave privada para fornecer chaves públicas. Esta chave privada se encontra no pacote br.com.thiago10gr.util
 com o nome de SECRET_KEY.
 
+Os tokens de acesso podem ser testados em: https://jwt.io/
+
 Para este projeto foi utilizado MySql e então criado a base de dados projetows e a tabela tbl_usuario:
 
 CREATE TABLE TBL_USUARIO
@@ -24,6 +26,8 @@ CREATE TABLE TBL_USUARIO
 	PRIMARY KEY (ID_USUARIO)
 );
 
+Lembrando que é necessário que estejam dentro da pasta lib do Tomcat o jar do driver do Mysql e o jar do Servlet API.
+
 Para a realização da conexão com a base de dados é feito um lookup. As configurações de acesso a base de dados devem ser postas no arquivo context.xml do Tomcat.
 
    <Resource auth="Container"
@@ -35,4 +39,7 @@ Para a realização da conexão com a base de dados é feito um lookup. As confi
        type="javax.sql.DataSource" 
        url="jdbc:mysql://localhost:3306/padraows" /> 
        
- Os tokens podem ser testados em: https://jwt.io/
+      
+
+       
+ 
