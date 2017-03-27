@@ -1,20 +1,19 @@
 # padrao-ws
 Criação de um simples WebService com token de acesso (JWT)
 
-O usuário obtém um token de acesso ao realizar o login e este token deve ser fornecido a cada requisição. Existe um filter que intercepta cada 
-requisição feita, fazendo assim a validação do token fornecido.
-
-O WebService utiliza uma chave privada para fornecer chaves públicas. Esta chave privada se encontra no pacote br.com.thiago10gr.util
+O WebService utiliza uma chave privada para fornecer chaves públicas, esta chave privada pode ser encontrada no pacote br.com.thiago10gr.util
 com o nome de SECRET_KEY.
 
-Os tokens de acesso podem ser testados em: https://jwt.io/
+O usuário obtém um token de acesso ao realizar o login e este token deve ser fornecido a cada requisição. Existe um filter que intercepta as requisições feitas, fazendo assim a validação do token fornecido. 
 
 Os Métodos que necessitam de um Token de acesso são anotados com @Secured 
+
+Os tokens de acesso podem ser testados em: https://jwt.io/
 
 Para realizar a requisição do Token é necessário fornecer um Header:
 Content-Type Value - application/x-www-form-urlencoded
 
-Para os métodos anotados com @Secured é necessário fornecer no Header:
+Para os métodos anotados com @Secured, é necessário fornecer no Header:
 Content-Type Value - application/x-www-form-urlencoded
 Authorization - Bearer token_de_acesso
 
