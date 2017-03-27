@@ -1,6 +1,7 @@
 package br.com.thiago10gr.resources;
 
 import java.io.IOException;
+
 import javax.annotation.Priority;
 import javax.ws.rs.NotAuthorizedException;
 import javax.ws.rs.Priorities;
@@ -9,6 +10,7 @@ import javax.ws.rs.container.ContainerRequestFilter;
 import javax.ws.rs.core.HttpHeaders;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.ext.Provider;
+
 import br.com.thiago10gr.util.Secured;
 import br.com.thiago10gr.util.Util;
 
